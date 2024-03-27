@@ -1,13 +1,14 @@
 class Parent {
-    void show() { System.out.println("Parent's show())
+    void show() { System.out.println("Parent's show()");
+}
 }
  
 // Inherited class
-class Child extends {
+class Child extends Parent {
     // This method overrides show() of Parent
-    @Override void sho()
+    @Override void show()
     {
-        System.out.println( Child's show());
+        System.out.println( "Child's show()");
     }
 }
  
@@ -26,6 +27,6 @@ class Main {
         // is called. This is called RUN TIME
         // POLYMORPHISM.
         Parent obj2 = new Child()
-        obj.show();
+        obj2.show();
     }
 }
